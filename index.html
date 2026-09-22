@@ -1,0 +1,641 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="zh-CN"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;HSK 2 - Lesson 9 | Dilfuza Kāng lǎo shī&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--primary: #4A90E2;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--primary-dark: #357ABD;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--secondary: #F39C12;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--bg: #F5F7FA;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--card-bg: #FFFFFF;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--text-dark: #2C3E50;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--text-light: #7F8C8D;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--shadow: 0 8px 20px rgba(0,0,0,0.08);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--correct: #2ECC71;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--wrong: #E74C3C;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--border-radius: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--bg);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-dark);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, var(--primary), var(--primary-dark));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 25px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 10px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>header h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 0 10px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 32px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: 1px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>header h2 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 400;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0.95;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #E8F0FE;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.tabs {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 10px rgba(0,0,0,0.05);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: sticky;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>z-index: 100;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.tab-btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--bg);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px 24px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-light);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.tab-btn:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #E2E8F0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.tab-btn.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--primary);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 900px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 30px auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.content-section {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>animation: slideUp 0.4s ease forwards;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.content-section.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes slideUp {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>from { opacity: 0; transform: translateY(15px); }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>to { opacity: 1; transform: translateY(0); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Generic Card Style */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.card {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--card-bg);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: var(--border-radius);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: var(--shadow);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* SVG Audio Button */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.audio-btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #EDF2F7;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 45px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 45px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: inline-flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.audio-btn:hover {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--primary);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: scale(1.05);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.audio-btn svg {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 24px; height: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>fill: currentColor;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Flashcards */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.flashcard-wrapper {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>perspective: 1000px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.flashcard {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--card-bg);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: var(--border-radius);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: var(--shadow);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 50px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform-style: preserve-3d;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 250px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.flashcard:active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: scale(0.98);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hz { font-size: 80px; font-weight: bold; color: var(--primary); margin: 10px 0; line-height: 1; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.py { font-size: 28px; color: var(--text-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.translations {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-top: 2px dashed #EDF2F7;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.flashcard.flipped .translations {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>animation: fadeIn 0.4s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes fadeIn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>from { opacity: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>to { opacity: 1; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.lang-row {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 12px 0;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 18px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.lang-badge {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--primary);<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 4px 10px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 6px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 12px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-right: 15px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 35px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.controls { display: flex; justify-content: space-between; align-items: center; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--primary); color: white; border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px 30px; border-radius: 8px; cursor: pointer; font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600; transition: background 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn:hover { background: var(--primary-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.fc-counter { font-size: 18px; font-weight: bold; color: var(--text-light); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Dialogues */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dialogue-title {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 22px; font-weight: bold; color: var(--primary);<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 2px solid var(--bg); padding-bottom: 12px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.line { margin-bottom: 20px; padding: 15px; border-radius: 8px; background: #F8FAFC; border-left: 4px solid var(--primary); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.line-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.line-hz { font-size: 20px; font-weight: 600; color: #2D3748; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.line-tr { font-size: 15px; color: #4A5568; margin-top: 8px; display: flex; align-items: center; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Quizzes */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.quiz-q { font-size: 22px; font-weight: bold; margin-bottom: 20px; color: var(--text-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.quiz-uz-only { font-size: 30px; text-align: center; margin: 25px 0; color: var(--text-dark); font-weight: bold;}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.quiz-inst { font-size: 16px; color: var(--secondary); margin-bottom: 15px; font-weight: 600;}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.options { display: grid; gap: 12px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.option-btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--bg); border: 2px solid transparent; padding: 15px 20px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px; cursor: pointer; font-size: 18px; text-align: left;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.2s; color: var(--text-dark); font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.option-btn:hover:not(:disabled) { background: #E2E8F0; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.option-btn.correct { background: #E6FFFA; border-color: var(--correct); color: #276749; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.option-btn.wrong { background: #FFF5F5; border-color: var(--wrong); color: #9B2C2C; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.option-btn:disabled { cursor: default; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Grammar Explanation */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.grammar-concept { font-size: 18px; line-height: 1.6; }</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #1A202C;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #A0AEC0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.8;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>footer a { color: var(--primary); text-decoration: none; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;题太多，我没做完&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Dilfuza Kāng lǎo shī bilan xitoy tilini o'rganmiz&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tabs"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="tab-btn active" onclick="switchTab('flashcards')"&gt;生词闪卡&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="tab-btn" onclick="switchTab('vocab-test')"&gt;生词测试&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="tab-btn" onclick="switchTab('dialogues')"&gt;对话内容&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="tab-btn" onclick="switchTab('grammar')"&gt;语法解释&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="tab-btn" onclick="switchTab('grammar-test')"&gt;语法测试&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="tab-btn" onclick="switchTab('fill-blanks')"&gt;词语填空&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 1. 生词闪卡 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="flashcards" class="content-section active"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flashcard-wrapper"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flashcard" id="fc-container" onclick="flipCard()"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="audio-btn" onclick="event.stopPropagation(); playAudio(vocabList[currentFcIndex].ch)" title="Play Pronunciation"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;svg viewBox="0 0 24 24"&gt;&lt;path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="hz" id="fc-ch"&gt;错&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="py" id="fc-py"&gt;cuò&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="translations" id="fc-trans"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="lang-row"&gt;&lt;span class="lang-badge"&gt;UZ&lt;/span&gt;&lt;span id="fc-uz"&gt;xato, noto'g'ri&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="lang-row"&gt;&lt;span class="lang-badge"&gt;RU&lt;/span&gt;&lt;span id="fc-ru"&gt;ошибка&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="lang-row"&gt;&lt;span class="lang-badge"&gt;EN&lt;/span&gt;&lt;span id="fc-en"&gt;wrong&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="controls"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="btn" onclick="prevCard()"&gt;&amp;#8592; Prev&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="fc-counter" id="fc-counter"&gt;1 / 11&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="btn" onclick="nextCard()"&gt;Next &amp;#8594;&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 2. 生词测试 (包含乌兹别克语意思测试与拼音测试) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="vocab-test" class="content-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="vocab-test-container"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="btn" style="width:100%; margin-top:20px; padding: 15px; font-size: 18px;" onclick="renderVocabTest()"&gt;Qayta boshlash (Restart)&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 3. 对话内容 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="dialogues" class="content-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="dialogues-container"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 4. 语法解释 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="grammar" class="content-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="dialogue-title"&gt;1. 结果补语 (Result Complement)&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="grammar-concept"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="line-tr"&gt;&lt;span class="lang-badge"&gt;UZ&lt;/span&gt; Ba'zi fe'l va sifatlarni fe'ldan keyin qo'yish mumkin. Ular fe'lning natijasini to'ldirib, izohlab keladi (Masalan: 看见, 听懂, 做好, 找到). Inkor shakli "没(有)" bilan yasaladi va gap oxiriga "了" qo'yilmaydi. Savol shaklida gap oxiriga "(了)没有" qo'yiladi.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="line-tr" style="margin-top:10px;"&gt;&lt;span class="lang-badge"&gt;RU&lt;/span&gt; Дополнительный элемент результата. Ставится после глагола для указания результата действия (напр. 看见, 听懂, 做好). Отрицание образуется с помощью 没 перед глаголом (без 了 в конце). Вопросительная форма использует (了)没有 в конце.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="line-tr" style="margin-top:10px;"&gt;&lt;span class="lang-badge"&gt;EN&lt;/span&gt; Some verbs or adjectives can be placed after a verb to explain the result of an action. The negative form uses 没 before the verb (without 了). Questions often end with (了)没有.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="dialogue-title"&gt;2. 介词 "从" (Preposition "cóng")&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="grammar-concept"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="line-tr"&gt;&lt;span class="lang-badge"&gt;UZ&lt;/span&gt; "从" old ko'makchisi vaqt, yo'nalish va biror ishning boshlanish nuqtasi yoki tartibni ifodalashda ishlatiladi, asosan "到" bilan birga qo'llaniladi.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="line-tr" style="margin-top:10px;"&gt;&lt;span class="lang-badge"&gt;RU&lt;/span&gt; Предлог 从 используется для обозначения начальной точки периода времени, отрезка пути или процесса. Часто используется вместе с 到.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="line-tr" style="margin-top:10px;"&gt;&lt;span class="lang-badge"&gt;EN&lt;/span&gt; The preposition 从 introduces a starting point in time, distance, or sequence. It is often paired with 到.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="dialogue-title"&gt;3. "第~" 表示顺序 (Ordinal "dì~")&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="grammar-concept"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="line-tr"&gt;&lt;span class="lang-badge"&gt;UZ&lt;/span&gt; "第" so'zi sonlardan oldin qo'yilib, tartibni ifodalaydi. (Masalan: 第一次 - birinchi marta).&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="line-tr" style="margin-top:10px;"&gt;&lt;span class="lang-badge"&gt;RU&lt;/span&gt; 第 ставится перед числительными для образования порядковых числительных.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="line-tr" style="margin-top:10px;"&gt;&lt;span class="lang-badge"&gt;EN&lt;/span&gt; 第 is placed before numerals to indicate ordinal numbers.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 5. 语法测试 (仅保留汉字，至少15题) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="grammar-test" class="content-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="grammar-test-container"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="btn" style="width:100%; margin-top:20px; padding: 15px; font-size: 18px;" onclick="renderGrammarTest()"&gt;重新开始&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 6. 词语填空 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="fill-blanks" class="content-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="quiz-inst" style="text-align: center; font-size: 18px;"&gt;选择正确的词语 / Choose the correct word: &lt;br&gt;&lt;strong style="color:var(--text-dark);"&gt;(完, 上班, 一)&lt;/strong&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="fill-test-container"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="btn" style="width:100%; margin-top:20px; padding: 15px; font-size: 18px;" onclick="renderFillTest()"&gt;重新开始 / Qayta boshlash&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>HSK 2 Standard Course - Lesson 9&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>© 2026 Dilfuza Kāng lǎo shī (telegram@diffila)</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Data Configuration</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const vocabList = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ch: '错', py: 'cuò', uz: "xato, noto'g'ri", ru: "ошибка", en: "wrong"},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ch: '从', py: 'cóng', uz: "-dan", ru: "от, из", en: "from"},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ch: '跳舞', py: 'tiào wǔ', uz: "raqsga tushmoq", ru: "танцевать", en: "to dance"},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ch: '第一', py: 'dì yī', uz: "birinchi marta", ru: "первый", en: "first"},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ch: '希望', py: 'xīwàng', uz: "umid qilmoq", ru: "надеяться", en: "to hope"},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ch: '问题', py: 'wèntí', uz: "muammo, savol", ru: "вопрос, проблема", en: "question, problem"},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ch: '欢迎', py: 'huānyíng', uz: "xush kelibsiz", ru: "добро пожаловать", en: "welcome"},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ch: '上班', py: 'shàng bān', uz: "ishlamoq, ishga bormoq", ru: "идти на работу", en: "to go to work"},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ch: '懂', py: 'dǒng', uz: "tushunmoq", ru: "понимать", en: "to understand"},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ch: '完', py: 'wán', uz: "tugatmoq", ru: "заканчивать", en: "to finish"},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ch: '题', py: 'tí', uz: "savol, masala", ru: "вопрос, задача", en: "question"}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const dialoguesData = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title: "1. 打电话 (Telefondagi suhbat)",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>lines: [</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ch: "A: 你好！请问张欢在吗？", uz: "Salom! Kechirasiz, Jang Huan bormi?", ru: "Здравствуйте! Скажите, пожалуйста, Чжан Хуань на месте?", en: "Hello! Is Zhang Huan there, please?"},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ch: "B: 你打错了，我们这儿没有叫张欢的。", uz: "Siz boshqa joyga tushdingiz, bizda Jang Huan degan odam yo'q.", ru: "Вы ошиблись номером, у нас нет никого по имени Чжан Хуань.", en: "You dialed the wrong number, we don't have anyone named Zhang Huan here."},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ch: "A: 对不起。", uz: "Kechirasiz.", ru: "Извините.", en: "Sorry."}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>]</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title: "2. 在学校 (Maktabda)",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>lines: [</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ch: "A: 您从几岁开始学习跳舞？", uz: "Siz necha yoshingizdan boshlab raqsni o'rgangansiz?", ru: "Со скольки лет вы начали учиться танцевать?", en: "From what age did you start learning to dance?"},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ch: "B: 我第一次跳舞是在七岁的时候。", uz: "Birinchi marta yetti yoshimda raqsga tushganman.", ru: "В первый раз я танцевала, когда мне было семь лет.", en: "I danced for the first time when I was seven years old."},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ch: "A: 我女儿今年也七岁了。我希望她能跟您学跳舞，可以吗？", uz: "Mening qizim hozir yetti yoshda, raqsni sizdan o'rganishini xohlagandim, o'rgata olasizmi?", ru: "Моей дочери в этом году тоже семь лет. Я надеюсь, она сможет учиться танцам у вас, можно?", en: "My daughter is also seven years old this year. I hope she can learn dancing from you, is that okay?"},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ch: "B: 没问题，非常欢迎。", uz: "Muammo yo'q, bajonidil qabul qilamiz.", ru: "Без проблем, очень добро пожаловать.", en: "No problem, very welcome."}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>]</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title: "3. 在家里 (Uyda)",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>lines: [</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ch: "A: 你知道吗？大卫找到工作了。", uz: "Xabaring bormi? Dovud ish topdi.", ru: "Ты знаешь? Дэвид нашел работу.", en: "Do you know? David found a job."},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ch: "B: 太好了！他从什么时候开始上班？", uz: "Juda yaxshi bo'libdi! Ishni qachondan boshlaydi?", ru: "Здорово! С какого времени он начинает работать?", en: "Great! When does he start working?"},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ch: "A: 从下个星期一开始。", uz: "Keyingi dushanbadan boshlaydi.", ru: "Со следующего понедельника.", en: "Starting from next Monday."},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ch: "B: 这是他的第一个工作，希望他能喜欢。", uz: "Bu uning birinchi ishi, umid qilamanki, unga yoqadi.", ru: "Это его первая работа, надеюсь, она ему понравится.", en: "This is his first job, I hope he will like it."}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>]</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title: "4. 在教室 (Sinfxonada)",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>lines: [</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ch: "A: 昨天的考试怎么样？你都听懂了吗？", uz: "Kechagi imtihon qanday o'tdi? Hammasiga tushundingmi?", ru: "Как вчерашний экзамен? Ты все понял?", en: "How was yesterday's exam? Did you understand everything?"},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ch: "B: 听懂了。", uz: "Tushundim.", ru: "Понял.", en: "Understood."},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ch: "A: 你都做完了没有？", uz: "Hammasini bajarib tugata oldingmi?", ru: "Ты все закончил делать?", en: "Did you finish doing everything?"},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ch: "B: 题太多，我没做完。", uz: "Savollar juda ko'p ekan, hammasini tugata olmadim.", ru: "Слишком много вопросов, я не закончил.", en: "Too many questions, I didn't finish."}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>]</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// 15 Grammar test questions (Hanzi only as requested)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const grammarTest = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "1. 我听（ ）今天的汉语课了。", opts: ["懂", "完", "错"], ans: 0 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "2. 大卫找（ ）工作了。", opts: ["见", "到", "懂"], ans: 1 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "3. 昨天的考试你都做（ ）了没有？", opts: ["吗", "完", "呢"], ans: 1 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "4. 她（ ）七岁开始学习跳舞。", opts: ["到", "在", "从"], ans: 2 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "5. 这是我的（ ）一个工作。", opts: ["第", "次", "个"], ans: 0 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "6. 题太多，我没做（ ）。", opts: ["完", "懂", "见"], ans: 0 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "7. 你看（ ）我的书了吗？", opts: ["到", "见", "完"], ans: 1 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "8. （ ）北京到上海要坐几个小时的飞机？", opts: ["在", "从", "去"], ans: 1 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "9. 我没有看（ ）你的女朋友。", opts: ["到", "完", "见"], ans: 2 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "10. 我（ ）一次去中国旅游。", opts: ["第", "从", "最"], ans: 0 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "11. 老师的话你听（ ）没有？", opts: ["完", "懂", "见"], ans: 1 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "12. 他没听（ ）我说的话。", opts: ["完", "见", "懂"], ans: 2 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "13. 你打（ ）了，这里没有叫张欢的。", opts: ["对", "错", "完"], ans: 1 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "14. 从下个星期一（ ）上班。", opts: ["开始", "完", "到"], ans: 0 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "15. 你做（ ）饭了没有？", opts: ["完", "见", "好"], ans: 2 }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const fillTest = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "1. 衣服你洗_____了没有？", opts: ["完", "上班", "一"], ans: 0 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "2. 作业太多了，我还没做_____。", opts: ["上班", "完", "一"], ans: 1 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "3. 从八点到十二点她们都在_____。", opts: ["一", "完", "上班"], ans: 2 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "4. 我第_____次去中国旅游。", opts: ["一", "上班", "完"], ans: 0 }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- Core Functions ---</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function playAudio(text) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Remove the "A: " or "B: " part for clear pronunciation</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const cleanText = text.replace(/^[A-Z]:\s*/, "");</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const utterance = new SpeechSynthesisUtterance(cleanText);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>utterance.lang = 'zh-CN';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>utterance.rate = 0.9; // Slightly slower for language learners</p>
+<p class="p1"><span class="Apple-converted-space">            </span>window.speechSynthesis.speak(utterance);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function switchTab(tabId) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.content-section').forEach(el =&gt; el.classList.remove('active'));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.tab-btn').forEach(el =&gt; el.classList.remove('active'));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById(tabId).classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>event.target.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>window.scrollTo({ top: 0, behavior: 'smooth' });</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- Flashcards ---</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let currentFcIndex = 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function renderFc() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const v = vocabList[currentFcIndex];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('fc-ch').innerText = v.ch;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('fc-py').innerText = v.py;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('fc-uz').innerText = v.uz;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('fc-ru').innerText = v.ru;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('fc-en').innerText = v.en;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('fc-counter').innerText = `${currentFcIndex + 1} / ${vocabList.length}`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('fc-container').classList.remove('flipped');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function flipCard() {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('fc-container').classList.toggle('flipped');<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function nextCard() {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentFcIndex = (currentFcIndex + 1) % vocabList.length;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderFc();<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function prevCard() {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentFcIndex = (currentFcIndex - 1 + vocabList.length) % vocabList.length;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderFc();<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- Vocab Test (Meaning &amp; Pinyin) ---</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function renderVocabTest() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const container = document.getElementById('vocab-test-container');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>container.innerHTML = '';</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// 题库中包含测试意思和测试拼音两种题目</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let allQuestions = [];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>vocabList.forEach(q =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>allQuestions.push({ type: 'meaning', ...q });</p>
+<p class="p1"><span class="Apple-converted-space">                </span>allQuestions.push({ type: 'pinyin', ...q });</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// 随机打乱并选择15道题目</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let questions = allQuestions.sort(() =&gt; 0.5 - Math.random()).slice(0, 15);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>questions.forEach((q, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>let options = [];</p>
+<p class="p1"><span class="Apple-converted-space">                </span>let correctOpt = "";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>let instruction = "";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (q.type === 'meaning') {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>instruction = "Ushbu iyeroglifning o'zbekcha tarjimasini toping (Ma'nosini toping):";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>correctOpt = q.uz;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>let distractors = vocabList.filter(v =&gt; v.ch !== q.ch).sort(() =&gt; 0.5 - Math.random()).slice(0, 3).map(v =&gt; v.uz);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>options = [correctOpt, ...distractors].sort(() =&gt; 0.5 - Math.random());</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>instruction = "Ushbu iyeroglifning pinyinini toping (Pinyinni toping):";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>correctOpt = q.py;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>let distractors = vocabList.filter(v =&gt; v.ch !== q.ch).sort(() =&gt; 0.5 - Math.random()).slice(0, 3).map(v =&gt; v.py);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>options = [correctOpt, ...distractors].sort(() =&gt; 0.5 - Math.random());</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>let correctIdx = options.indexOf(correctOpt);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>let div = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>div.className = 'card';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>div.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="quiz-inst"&gt;${index + 1}. ${instruction}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="quiz-uz-only"&gt;${q.ch}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="options"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>${options.map((opt, i) =&gt; `&lt;button class="option-btn" onclick="checkAnswer(this, ${i === correctIdx})"&gt;${opt}&lt;/button&gt;`).join('')}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>container.appendChild(div);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- Grammar Test (15 Questions, Hanzi Only) ---</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function renderGrammarTest() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderQuiz('grammar-test-container', grammarTest, "请选择正确的答案填空：");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- Fill In the Blanks Test ---</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function renderFillTest() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderQuiz('fill-test-container', fillTest, "");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- Generic Quiz Renderer ---</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function renderQuiz(containerId, dataArray, instruction) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const container = document.getElementById(containerId);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>container.innerHTML = '';</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (instruction) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>let instDiv = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>instDiv.className = 'quiz-inst';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>instDiv.innerText = instruction;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>container.appendChild(instDiv);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>dataArray.forEach((q, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>let div = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>div.className = 'card';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>div.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="quiz-q"&gt;${q.q}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="options"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>${q.opts.map((opt, i) =&gt; `&lt;button class="option-btn" onclick="checkAnswer(this, ${i === q.ans})"&gt;${opt}&lt;/button&gt;`).join('')}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>container.appendChild(div);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- Quiz Check Answer Logic ---</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function checkAnswer(btn, isCorrect) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let siblings = btn.parentElement.children;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>for(let sib of siblings) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>sib.disabled = true; // Disable all buttons</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if(isCorrect) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>btn.classList.add('correct');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>btn.classList.add('wrong');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Highlight the correct one</p>
+<p class="p1"><span class="Apple-converted-space">                </span>let parent = btn.parentElement;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>let optionBtns = Array.from(parent.children);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>// We stored the answer implicitly via the onClick structure, let's find the correct button text</p>
+<p class="p1"><span class="Apple-converted-space">                </span>// by checking their onclick attribute string</p>
+<p class="p1"><span class="Apple-converted-space">                </span>optionBtns.forEach(b =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (b.getAttribute("onclick").includes("true")) {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>b.classList.add('correct');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- Dialogues Render (With Translations &amp; Audio) ---</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function renderDialogues() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const container = document.getElementById('dialogues-container');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>dialoguesData.forEach(d =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>let html = `&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="dialogue-title"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;${d.title}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button class="audio-btn" title="Play Full Dialogue" onclick="playAudio('${d.lines.map(l =&gt; l.ch).join(' ')}')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;svg viewBox="0 0 24 24"&gt;&lt;path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>d.lines.forEach(l =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>html += `</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="line"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="line-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="line-hz"&gt;${l.ch}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;button class="audio-btn" style="width:35px; height:35px;" title="Play Line" onclick="playAudio('${l.ch}')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;svg viewBox="0 0 24 24"&gt;&lt;path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="line-tr"&gt;&lt;span class="lang-badge"&gt;UZ&lt;/span&gt; ${l.uz}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="line-tr"&gt;&lt;span class="lang-badge"&gt;RU&lt;/span&gt; ${l.ru}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="line-tr"&gt;&lt;span class="lang-badge"&gt;EN&lt;/span&gt; ${l.en}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                </span>html += `&lt;/div&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>container.innerHTML += html;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- Init ---</p>
+<p class="p1"><span class="Apple-converted-space">        </span>window.onload = () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderFc();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderVocabTest();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderDialogues();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderGrammarTest();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderFillTest();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
